@@ -13,6 +13,16 @@ div.my-carousel-images{
     min-height: 540px;
 }
 
+div.my-carousel-images img{
+    display: none;
+}
+
+div.my-carousel-images img.active{
+    display: inline;
+    width: 100%;
+    height: 540px;
+}
+
 div.my-thumbnails{
     background-color: violet;
     min-height: 160px;
