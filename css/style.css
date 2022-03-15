@@ -3,14 +3,15 @@ body{
 }
 
 div.my-carousel-container{
+    width: 1000px;
     min-height: 700px;
     min-width:800px ;
-    background-color: aquamarine;
+    margin: 0 auto;
 }
 
 div.my-carousel-images{
-    background-color: cadetblue;
     min-height: 540px;
+    position: relative
 }
 
 div.my-carousel-images img{
@@ -24,8 +25,19 @@ div.my-carousel-images img.active{
 }
 
 div.my-thumbnails{
-    background-color: violet;
-    min-height: 160px;
+    min-height: 140px;
+    display: flex;
+}
+
+div.my-thumbnails img{
+    filter: brightness(35%);
+    width: calc(100% / 5);
+    height: 140px;
+}
+
+div.my-thumbnails img.small-active{
+    border: 5px solid rgb(207, 207, 207);
+    filter: none;
 }
 
 div.my-previous,
@@ -61,4 +73,26 @@ div.my-next > span::after{
     font-weight: 900;
     content: "\f520";
     line-height: 30px;
+}
+
+h1.active-title {
+    display: inline-block;
+}
+
+h1 {
+    display: none;
+    color: white;
+    position: relative;
+    z-index: 2;
+    padding-top: .5rem;
+}
+
+div.text-container{
+    width: 250px;
+    height: 70px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-end-end-radius: .5rem;
 }
